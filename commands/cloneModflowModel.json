@@ -9,7 +9,7 @@
     },
     "message_name": {
       "type": "string",
-      "pattern": "^updateBoundary$"
+      "pattern": "^cloneModflowModel$"
     },
     "metadata": {
       "type": "object"
@@ -21,19 +21,18 @@
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
-        "boundary_id": {
+        "new_id": {
           "type": "string",
-          "pattern": "^[a-z0-9_\\-]{3,255}$"
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
-        "boundary": {
-          "$ref": "/modflow/boundary/boundary"
+        "is_tool": {
+          "type": "boolean"
         }
       },
-      "additionalProperties": false,
       "required": [
         "id",
-        "boundary",
-        "boundary_id"
+        "new_id",
+        "is_tool"
       ]
     }
   },
