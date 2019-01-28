@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "modflow/command/removeBoundaryPayload.json"
+            "$ref": "commands/removeBoundaryPayload.json"
         }
     },
     "required": [

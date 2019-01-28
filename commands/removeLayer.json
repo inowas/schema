@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "modflow/command/removeLayerPayload.json"
+            "$ref": "commands/removeLayerPayload.json"
         }
     },
     "additionalProperties": false,

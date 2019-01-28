@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "modflow/command/updateBoundaryPayload.json"
+            "$ref": "commands/updateBoundaryPayload.json"
         }
     },
     "additionalProperties": false,

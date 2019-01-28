@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "command/calculateModflowModelPayload.json"
+            "$ref": "commands/calculateModflowModelPayload.json"
         }
     },
     "additionalProperties": false,
