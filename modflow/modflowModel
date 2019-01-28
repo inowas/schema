@@ -17,13 +17,13 @@
             "type": "string"
         },
         "geometry": {
-            "$ref": "geojson/polygon.json"
+            "$ref": "geojson/polygon"
         },
         "bounding_box": {
-            "$ref": "modflow/boundingBox.json"
+            "$ref": "modflow/boundingBox"
         },
         "grid_size": {
-            "$ref": "modflow/gridSize.json"
+            "$ref": "modflow/gridSize"
         },
         "length_unit": {
             "description": "0: undefined, 1: feet, 2: meters, 3: centimeters",
@@ -42,11 +42,11 @@
             "maxLength": 3
         },
         "active_cells": {
-            "$ref": "modflow/activeCells.json"
+            "$ref": "modflow/activeCells"
         },
         "mt3dms": {},
         "stress_periods": {
-            "$ref": "modflow/stressPeriods.json"
+            "$ref": "modflow/stressPeriods"
         }
     },
     "additionalProperties": true,

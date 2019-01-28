@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "commands/addBoundaryPayload.json"
+            "$ref": "commands/addBoundaryPayload"
         }
     },
     "additionalProperties": false,

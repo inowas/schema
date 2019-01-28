@@ -5,11 +5,11 @@
     "description": "Geometry as defined by GeoJSON",
     "oneOf": [
         {
-            "$ref": "geojson/linestring.json"
+            "$ref": "geojson/linestring"
         },{
-            "$ref": "geojson/point.json"
+            "$ref": "geojson/point"
         },{
-            "$ref": "geojson/polygon.json"
+            "$ref": "geojson/polygon"
         }
     ]
 }

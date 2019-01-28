@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "modflow/modflowModel.json"
+            "$ref": "modflow/modflowModel"
         }
     },
     "additionalProperties": false,

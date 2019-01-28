@@ -8,7 +8,7 @@
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
         "stress_periods": {
-            "$ref": "modflow/stressPeriods.json"
+            "$ref": "modflow/stressPeriods"
         }
     },
     "additionalProperties": false,

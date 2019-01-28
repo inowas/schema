@@ -16,7 +16,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "commands/addLayerPayload.json"
+            "$ref": "commands/addLayerPayload"
         }
     },
     "additionalProperties": false,
