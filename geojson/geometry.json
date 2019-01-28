@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://schema.inowas.com/geojson/geometry.json",
+    "title": "geometry",
+    "description": "Geometry as defined by GeoJSON",
+    "oneOf": [
+        {
+            "$ref": "linestring.json"
+        },{
+            "$ref": "point.json"
+        },{
+            "$ref": "polygon.json"
+        }
+    ]
+}
