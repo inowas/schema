@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "commands/updateModflowPackagePayload"
+            "$ref": "/commands/updateModflowPackagePayload"
         }
     },
     "additionalProperties": false,

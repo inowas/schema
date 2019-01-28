@@ -12,7 +12,7 @@
             "pattern": "^[a-z0-9_\\-]{3,255}$"
         },
         "boundary": {
-            "$ref": "modflow/boundary/boundary"
+            "$ref": "/modflow/boundary/boundary"
         }
     },
     "additionalProperties": false,

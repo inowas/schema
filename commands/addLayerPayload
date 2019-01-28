@@ -9,7 +9,7 @@
             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
         "layer": {
-            "$ref": "modflow/soilmodel/layer"
+            "$ref": "/modflow/soilmodel/layer"
         }
     },
     "additionalProperties": false,

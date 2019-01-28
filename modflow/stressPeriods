@@ -18,7 +18,7 @@
         "stress_periods": {
             "type": "array",
             "items": {
-                "$ref": "modflow/stressPeriod"
+                "$ref": "/modflow/stressPeriod"
             },
             "minItems": 1
         }

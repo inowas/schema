@@ -13,23 +13,23 @@
             "maxLength": 255
         },
         "geometry": {
-            "$ref": "geojson/linestring"
+            "$ref": "/geojson/linestring"
         },
         "type": {
             "type": "string",
             "pattern": "^chd$"
         },
         "affected_layers": {
-            "$ref": "modflow/affectedLayers"
+            "$ref": "/modflow/affectedLayers"
         },
         "active_cells": {
-            "$ref": "modflow/activeCells"
+            "$ref": "/modflow/activeCells"
         },
         "metadata": {},
         "observation_points": {
             "type": "array",
             "items": {
-                "$ref": "modflow/boundary/constantHeadObservationPoint"
+                "$ref": "/modflow/boundary/constantHeadObservationPoint"
             },
             "minItems": 1
         }

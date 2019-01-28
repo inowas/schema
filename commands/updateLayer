@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "commands/updateLayerPayload"
+            "$ref": "/commands/updateLayerPayload"
         }
     },
     "additionalProperties": false,

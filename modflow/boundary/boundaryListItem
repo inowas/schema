@@ -13,7 +13,7 @@
             "maxLength": 255
         },
         "geometry": {
-            "$ref": "geojson/geometry"
+            "$ref": "/geojson/geometry"
         },
         "type": {
             "type": "string",
@@ -21,7 +21,7 @@
             "maxLength": 3
         },
         "affected_layers": {
-            "$ref": "modflow/affectedLayers"
+            "$ref": "/modflow/affectedLayers"
         }
     },
     "required": [

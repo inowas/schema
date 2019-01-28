@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "commands/updateScenarioAnalysisPayload"
+            "$ref": "/commands/updateScenarioAnalysisPayload"
         }
     },
     "additionalProperties": false,

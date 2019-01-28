@@ -20,19 +20,19 @@
             "type": "integer"
         },
         "top": {
-            "$ref": "modflow/soilmodel/layerValue"
+            "$ref": "/modflow/soilmodel/layerValue"
         },
         "botm": {
-            "$ref": "modflow/soilmodel/layerValue"
+            "$ref": "/modflow/soilmodel/layerValue"
         },
         "hk": {
-            "$ref": "modflow/soilmodel/layerValue"
+            "$ref": "/modflow/soilmodel/layerValue"
         },
         "hani": {
-            "$ref": "modflow/soilmodel/layerValue"
+            "$ref": "/modflow/soilmodel/layerValue"
         },
         "vka": {
-            "$ref": "modflow/soilmodel/layerValue"
+            "$ref": "/modflow/soilmodel/layerValue"
         },
         "layavg": {
             "type": "number"
@@ -44,10 +44,10 @@
             "type": "number"
         },
         "ss": {
-            "$ref": "modflow/soilmodel/layerValue"
+            "$ref": "/modflow/soilmodel/layerValue"
         },
         "sy": {
-            "$ref": "modflow/soilmodel/layerValue"
+            "$ref": "/modflow/soilmodel/layerValue"
         }
     },
     "required": [

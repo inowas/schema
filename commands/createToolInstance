@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "commands/createToolInstancePayload"
+            "$ref": "/commands/createToolInstancePayload"
         }
     },
     "additionalProperties": false,

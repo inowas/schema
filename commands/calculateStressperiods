@@ -15,7 +15,7 @@
             "type": "object"
         },
         "payload": {
-            "$ref": "commands/calculateStressperiodsPayload"
+            "$ref": "/commands/calculateStressperiodsPayload"
         }
     },
     "additionalProperties": false,

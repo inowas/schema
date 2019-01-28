@@ -13,7 +13,7 @@
             "maxLength": 255
         },
         "layer": {
-            "$ref": "modflow/soilmodel/layer"
+            "$ref": "/modflow/soilmodel/layer"
         }
     },
     "additionalProperties": false,
