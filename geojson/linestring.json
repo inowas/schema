@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "id": "https://schema.inowas.com/geojson/linestring.json",
     "title": "Linestring",
     "description": "Linestring as defined by GeoJSON",
     "type": "object",
