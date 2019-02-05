@@ -9,13 +9,22 @@
     },
     "message_name": {
       "type": "string",
-      "pattern": "^createModflowModel$"
+      "pattern": "^cancelModflowModelCalculation$"
     },
     "metadata": {
       "type": "object"
     },
     "payload": {
-      "$ref": "/modflow/modflowModel"
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        }
+      },
+      "required": [
+        "id"
+      ]
     }
   },
   "additionalProperties": false,

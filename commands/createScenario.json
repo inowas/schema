@@ -9,7 +9,7 @@
     },
     "message_name": {
       "type": "string",
-      "pattern": "^createScenarioAnalysis$"
+      "pattern": "^createScenario$"
     },
     "metadata": {
       "type": "object"
