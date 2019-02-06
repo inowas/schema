@@ -21,7 +21,7 @@
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
-        "type": {
+        "tool": {
           "type": "string"
         },
         "name": {
@@ -39,7 +39,7 @@
       },
       "required": [
         "id",
-        "type",
+        "tool",
         "name",
         "description",
         "public"
