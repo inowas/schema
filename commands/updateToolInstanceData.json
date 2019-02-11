@@ -9,7 +9,7 @@
     },
     "message_name": {
       "type": "string",
-      "pattern": "^updateToolInstance$"
+      "pattern": "^updateToolInstanceData$"
     },
     "metadata": {
       "type": "object"
