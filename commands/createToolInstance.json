@@ -32,17 +32,18 @@
         "description": {
           "type": "string"
         },
-        "data": {},
         "public": {
           "type": "boolean"
-        }
+        },
+        "data": {}
       },
       "required": [
         "id",
         "tool",
         "name",
         "description",
-        "public"
+        "public",
+        "data"
       ]
     }
   },

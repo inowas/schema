@@ -34,7 +34,10 @@
                 }
             },
             "required": [
-                "id"
+                "id",
+                "name",
+                "description",
+                "public"
             ]
         }
     },

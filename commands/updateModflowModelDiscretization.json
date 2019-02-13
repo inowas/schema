@@ -46,7 +46,14 @@
                 }
             },
             "required": [
-                "id"
+                "id",
+                "geometry",
+                "bounding_box",
+                "grid_size",
+                "active_cells",
+                "stressperiods",
+                "length_unit",
+                "time_unit"
             ]
         }
     },
