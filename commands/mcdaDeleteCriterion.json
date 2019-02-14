@@ -9,7 +9,7 @@
     },
     "message_name": {
       "type": "string",
-      "pattern": "^createToolInstance$"
+      "pattern": "^mcdaDeleteCriterion$"
     },
     "metadata": {
       "type": "object"
@@ -21,29 +21,15 @@
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
-        "tool": {
-          "type": "string"
-        },
-        "name": {
+        "criterion_id": {
           "type": "string",
-          "minLength": 3,
-          "maxLength": 255
-        },
-        "description": {
-          "type": "string"
-        },
-        "data": {},
-        "public": {
-          "type": "boolean"
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         }
       },
+      "additionalProperties": false,
       "required": [
         "id",
-        "tool",
-        "name",
-        "description",
-        "public",
-        "data"
+        "criterion_id"
       ]
     }
   },

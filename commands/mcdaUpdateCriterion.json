@@ -9,7 +9,7 @@
     },
     "message_name": {
       "type": "string",
-      "pattern": "^createToolInstance$"
+      "pattern": "^mcdaUpdateCriterion$"
     },
     "metadata": {
       "type": "object"
@@ -21,29 +21,23 @@
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
-        "tool": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string",
-          "minLength": 3,
-          "maxLength": 255
-        },
-        "description": {
-          "type": "string"
-        },
-        "data": {},
-        "public": {
-          "type": "boolean"
+        "criterion": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+            }
+          },
+          "required": [
+            "id"
+          ]
         }
       },
+      "additionalProperties": false,
       "required": [
         "id",
-        "tool",
-        "name",
-        "description",
-        "public",
-        "data"
+        "criterion"
       ]
     }
   },
