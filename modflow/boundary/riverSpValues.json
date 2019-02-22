@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "array",
+    "items": {
+      "description": "0: stage (float), 1: cond (float), 2: rbot (float)",
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3
+    }
+  }
+}

@@ -24,24 +24,10 @@
         },
         "type": {
           "type": "string",
-          "pattern": "^wel$"
-        },
-        "layers": {
-          "$ref": "/modflow/affectedLayers"
-        },
-        "cells": {
-          "$ref": "/modflow/activeCells"
-        },
-        "well_type": {
-          "type": "string",
-          "maxLength": 4
+          "pattern": "^op$"
         },
         "sp_values": {
-          "type": "array",
-          "items": {
-            "description": "0: Recharge Rate (float)",
-            "type": "number"
-          }
+          "$ref": "/modflow/boundary/riverSpValues"
         }
       },
       "required": [
