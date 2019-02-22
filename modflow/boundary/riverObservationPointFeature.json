@@ -27,7 +27,16 @@
           "pattern": "^op$"
         },
         "sp_values": {
-          "$ref": "/modflow/boundary/riverSpValues"
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "description": "0: stage (float), 1: cond (float), 2: rbot (float)",
+              "type": "number",
+              "minItems": 3,
+              "maxItems": 3
+            }
+          }
         }
       },
       "required": [
