@@ -33,9 +33,6 @@
       "required": [
         "name",
         "type",
-        "cells",
-        "layers",
-        "well_type",
         "sp_values"
       ]
     }
