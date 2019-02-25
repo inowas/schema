@@ -32,10 +32,6 @@
         "cells": {
           "$ref": "/modflow/cells"
         },
-        "well_type": {
-          "type": "string",
-          "maxLength": 4
-        },
         "sp_values": {
           "type": "array",
           "items": {
@@ -49,7 +45,6 @@
         "type",
         "cells",
         "layers",
-        "well_type",
         "sp_values"
       ]
     }
