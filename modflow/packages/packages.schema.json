@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Modflow Calculation object",
   "type": "object",
   "description": "This object represents all properties for calculation of modflow models",
@@ -316,10 +316,10 @@
               }
             },
             {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
             }
           ]
         },
@@ -338,10 +338,10 @@
               }
             },
             {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
             }
           ]
         },
@@ -360,10 +360,10 @@
               }
             },
             {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
             }
           ]
         },
@@ -382,10 +382,10 @@
               }
             },
             {
-                "type": "array",
-                "items": {
-                  "type": "boolean"
-                }
+              "type": "array",
+              "items": {
+                "type": "boolean"
+              }
             }
           ]
         },
@@ -410,7 +410,7 @@
               }
             },
             {
-                "type": "number"
+              "type": "number"
             },
             {
               "type": "null"
@@ -491,7 +491,7 @@
         },
         "stress_period_data": {
           "oneOf": [
-            { 
+            {
               "type": "array",
               "items": {
                 "type": "array",
@@ -517,10 +517,10 @@
               }
             },
             {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "null"
@@ -636,16 +636,16 @@
           "oneOf": [
             {
               "type": "object",
-              "properties":{
-                "number":{
-                "type":"array",
-                    "items": {
+              "properties": {
+                "number": {
                   "type": "array",
+                  "items": {
+                    "type": "array",
                     "items": {
-                    "type": "number",
-                    "minItems": 5
+                      "type": "number",
+                      "minItems": 5
                     }
-                    }
+                  }
                 }
               }
             },
@@ -705,14 +705,14 @@
           "oneOf": [
             {
               "type": "object",
-              "properties":{
-                "number":{
-                "type":"array",
-                  "items": {
+              "properties": {
+                "number": {
                   "type": "array",
+                  "items": {
+                    "type": "array",
                     "items": {
-                    "type": "number",
-                    "minItems": 5
+                      "type": "number",
+                      "minItems": 5
                     }
                   }
                 }
@@ -853,14 +853,14 @@
           "oneOf": [
             {
               "type": "object",
-              "properties":{
-                "number":{
-                "type":"array",
-                  "items": {
+              "properties": {
+                "number": {
                   "type": "array",
+                  "items": {
+                    "type": "array",
                     "items": {
-                    "type": "number",
-                    "minItems": 6
+                      "type": "number",
+                      "minItems": 6
                     }
                   }
                 }
@@ -922,13 +922,13 @@
           "oneOf": [
             {
               "type": "object",
-              "properties":{
-                "number":{
-                "type":"array",
-                  "items": {
+              "properties": {
+                "number": {
                   "type": "array",
+                  "items": {
+                    "type": "array",
                     "items": {
-                    "type": "number"
+                      "type": "number"
                     }
                   }
                 }
@@ -992,9 +992,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1014,9 +1014,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1036,9 +1036,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1058,9 +1058,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1080,9 +1080,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1127,9 +1127,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1149,9 +1149,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1171,9 +1171,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1193,9 +1193,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1215,9 +1215,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1253,9 +1253,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1321,9 +1321,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1343,16 +1343,16 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
             }
           ]
         },
-        "chani":  {
+        "chani": {
           "oneOf": [
             {
               "type": "array",
@@ -1365,16 +1365,16 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
             }
           ]
         },
-        "layvka":  {
+        "layvka": {
           "oneOf": [
             {
               "type": "array",
@@ -1387,16 +1387,16 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
             }
           ]
         },
-        "laywet":  {
+        "laywet": {
           "oneOf": [
             {
               "type": "array",
@@ -1409,9 +1409,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
@@ -1434,7 +1434,7 @@
         "iphdry": {
           "type": "number"
         },
-        "hk":  {
+        "hk": {
           "oneOf": [
             {
               "type": "array",
@@ -1447,16 +1447,16 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
             }
           ]
         },
-        "hani":  {
+        "hani": {
           "oneOf": [
             {
               "type": "array",
@@ -1469,16 +1469,16 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
             }
           ]
         },
-        "vka":  {
+        "vka": {
           "oneOf": [
             {
               "type": "array",
@@ -1491,16 +1491,16 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
             }
           ]
         },
-        "ss":  {
+        "ss": {
           "oneOf": [
             {
               "type": "array",
@@ -1513,16 +1513,16 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
             }
           ]
         },
-        "sy":  {
+        "sy": {
           "oneOf": [
             {
               "type": "array",
@@ -1535,16 +1535,16 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
             }
           ]
         },
-        "vkcb":  {
+        "vkcb": {
           "oneOf": [
             {
               "type": "array",
@@ -1557,9 +1557,9 @@
             },
             {
               "type": "array",
-                "items": {
-                  "type": "number"
-                }
+              "items": {
+                "type": "number"
+              }
             },
             {
               "type": "number"
