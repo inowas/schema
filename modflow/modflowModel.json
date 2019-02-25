@@ -42,7 +42,7 @@
             "maxLength": 3
         },
         "active_cells": {
-            "$ref": "/modflow/activeCells"
+            "$ref": "/modflow/cells"
         },
         "mt3dms": {},
         "stressperiods": {
