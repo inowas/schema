@@ -20,10 +20,10 @@
             "pattern": "^hob$"
         },
         "affected_layers": {
-            "$ref": "/modflow/affectedLayers"
+            "$ref": "/modflow/layers"
         },
         "active_cells": {
-            "$ref": "/modflow/activeCells"
+            "$ref": "/modflow/cells"
         },
         "metadata": {},
         "date_time_values": {

@@ -41,7 +41,7 @@
             "minLength": 3,
             "maxLength": 3
         },
-        "active_cells": {
+        "cells": {
             "$ref": "/modflow/cells"
         },
         "mt3dms": {},

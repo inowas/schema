@@ -31,7 +31,7 @@
                     "$ref": "/modflow/gridSize"
                 },
                 "active_cells": {
-                    "$ref": "/modflow/activeCells"
+                    "$ref": "/modflow/cells"
                 },
                 "stressperiods": {
                     "$ref": "/modflow/stressperiods"
