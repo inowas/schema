@@ -39,8 +39,13 @@
         "sp_values": {
           "type": "array",
           "items": {
-            "description": "0: Pumping Rate (float)",
-            "type": "number"
+            "type": "array",
+            "items": {
+              "description": "Pumping Rate",
+              "type": "number",
+              "minItems": 1,
+              "maxItems": 1
+            }
           }
         }
       },
