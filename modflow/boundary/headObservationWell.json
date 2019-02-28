@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://schema.inowas.com/",
   "type": "object",
   "properties": {
     "type": {
@@ -12,7 +11,7 @@
       "pattern": "^[a-z0-9_\\-]{3,255}$"
     },
     "geometry": {
-      "$ref": "/geojson/point"
+      "$ref": "../../geojson/point.json"
     },
     "properties": {
       "type": "object",
@@ -27,21 +26,16 @@
           "pattern": "^hob$"
         },
         "layers": {
-          "$ref": "/modflow/layers"
+          "$ref": "../../modflow/layers.json"
         },
         "cells": {
-          "$ref": "/modflow/cells"
+          "$ref": "../../modflow/cells.json"
         },
         "sp_values": {
           "type": "array",
           "items": {
-            "type": "array",
-            "items": {
-              "description": "Groundwater head",
-              "type": "number",
-              "minItems": 1,
-              "maxItems": 1
-            }
+            "description": "0: Head",
+            "type": "number"
           }
         }
       },
