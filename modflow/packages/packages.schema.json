@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Modflow Calculation object",
   "type": "object",
   "description": "This object represents all properties for calculation of modflow models",
@@ -1121,6 +1121,15 @@
               "items": {
                 "type": "array",
                 "items": {
+                  "type": "array"
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
                   "type": "number"
                 }
               }
@@ -1165,6 +1174,15 @@
               "items": {
                 "type": "array",
                 "items": {
+                  "type": "array"
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
                   "type": "number"
                 }
               }
@@ -1204,6 +1222,15 @@
         },
         "sy": {
           "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "array"
+                }
+              }
+            },
             {
               "type": "array",
               "items": {
@@ -1441,6 +1468,15 @@
               "items": {
                 "type": "array",
                 "items": {
+                  "type": "array"
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
                   "type": "number"
                 }
               }
@@ -1485,6 +1521,15 @@
               "items": {
                 "type": "array",
                 "items": {
+                  "type": "array"
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
                   "type": "number"
                 }
               }
@@ -1502,6 +1547,15 @@
         },
         "ss": {
           "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "array"
+                }
+              }
+            },
             {
               "type": "array",
               "items": {
@@ -1529,6 +1583,15 @@
               "items": {
                 "type": "array",
                 "items": {
+                  "type": "array"
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
                   "type": "number"
                 }
               }
@@ -1546,6 +1609,15 @@
         },
         "vkcb": {
           "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "array"
+                }
+              }
+            },
             {
               "type": "array",
               "items": {
