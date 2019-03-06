@@ -494,24 +494,21 @@
           "type": "object"
         },
         "stress_period_data": {
-          "oneOf": [{
-            "type": "object",
-            "properties": {
-              "number": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-9]+": {
+              "type": "array",
+              "items": {
                 "type": "array",
                 "items": {
-                  "type": "array",
-                  "items": {
-                    "type": "number",
-                    "minItems": 5,
-                    "maxItems": 5
-                  }
-                }
+                  "type": "integer"
+                },
+                "minItems": 5,
+                "maxItems": 5
               }
             }
-          }, {
-            "type": "null"
-          }]
+          }
         },
         "dtype": {
           "type": "null"
@@ -552,24 +549,21 @@
           }]
         },
         "stress_period_data": {
-          "oneOf": [{
-            "type": "object",
-            "properties": {
-              "number": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-9]+": {
+              "type": "array",
+              "items": {
                 "type": "array",
                 "items": {
-                  "type": "array",
-                  "items": {
-                    "type": "number",
-                    "minItems": 5,
-                    "maxItems": 5
-                  }
-                }
+                  "type": "integer"
+                },
+                "minItems": 5,
+                "maxItems": 5
               }
             }
-          }, {
-            "type": "null"
-          }]
+          }
         },
         "dtype": {
           "type": "null"
@@ -654,24 +648,21 @@
           }]
         },
         "stress_period_data": {
-          "oneOf": [{
-            "type": "object",
-            "properties": {
-              "number": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-9]+": {
+              "type": "array",
+              "items": {
                 "type": "array",
                 "items": {
-                  "type": "array",
-                  "items": {
-                    "type": "number",
-                    "minItems": 6,
-                    "maxItems": 6
-                  }
-                }
+                  "type": "integer"
+                },
+                "minItems": 6,
+                "maxItems": 6
               }
             }
-          }, {
-            "type": "null"
-          }]
+          }
         },
         "dtype": {
           "type": "null"
@@ -712,24 +703,21 @@
           }]
         },
         "stress_period_data": {
-          "oneOf": [{
-            "type": "object",
-            "properties": {
-              "number": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-9]+": {
+              "type": "array",
+              "items": {
                 "type": "array",
                 "items": {
-                  "type": "array",
-                  "items": {
-                    "type": "number",
-                    "minItems": 4,
-                    "maxItems": 4
-                  }
-                }
+                  "type": "integer"
+                },
+                "minItems": 4,
+                "maxItems": 4
               }
             }
-          }, {
-            "type": "null"
-          }]
+          }
         },
         "dtype": {
           "type": "null"
@@ -1131,19 +1119,17 @@
             "items": {
               "$ref": "#/definitions/layervalue"
             }
-          },
-          {
+          }, {
             "type": "number"
           }]
         },
         "hani": {
-          "oneOf":  [{
+          "oneOf": [{
             "type": "array",
             "items": {
               "$ref": "#/definitions/layervalue"
             }
-          },
-          {
+          }, {
             "type": "number"
           }]
         },
@@ -1153,8 +1139,7 @@
             "items": {
               "$ref": "#/definitions/layervalue"
             }
-          }, 
-          {
+          }, {
             "type": "number"
           }]
         },
@@ -1164,8 +1149,7 @@
             "items": {
               "$ref": "#/definitions/layervalue"
             }
-          },
-          {
+          }, {
             "type": "number"
           }]
         },
@@ -1175,8 +1159,7 @@
             "items": {
               "$ref": "#/definitions/layervalue"
             }
-          },
-          {
+          }, {
             "type": "number"
           }]
         },
@@ -1186,8 +1169,7 @@
             "items": {
               "$ref": "#/definitions/layervalue"
             }
-          },
-          {
+          }, {
             "type": "number"
           }]
         },
@@ -1430,7 +1412,8 @@
       "oneOf": [{
         "type": "number",
         "description": "One value for all in the layer"
-      }, {
+      }, 
+      {
         "type": "array",
         "description": "Rows",
         "items": {
@@ -1441,6 +1424,6 @@
           }
         }
       }]
-    },
+    }
   }
 }
