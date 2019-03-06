@@ -616,30 +616,10 @@
           }]
         },
         "rech": {
-          "oneOf": [{
-            "type": "array",
-            "items": {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            }
-          }, {
-            "type": "number"
-          }]
+          "$ref": "#/definitions/layervalue"
         },
         "irch": {
-          "oneOf": [{
-            "type": "array",
-            "items": {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            }
-          }, {
-            "type": "number"
-          }]
+          "$ref": "#/definitions/layervalue"
         },
         "extension": {
           "type": "string"
