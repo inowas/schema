@@ -384,11 +384,12 @@
                 "oneOf": [{
                   "type": "array",
                   "items": {
-                    "type": "number",
+                    "type": "number"
+                  },
                     "minItems": 2,
                     "maxItems": 2
-                  }
-                }, {
+                },
+                {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -502,7 +503,7 @@
               "items": {
                 "type": "array",
                 "items": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "minItems": 5,
                 "maxItems": 5
@@ -557,7 +558,7 @@
               "items": {
                 "type": "array",
                 "items": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "minItems": 5,
                 "maxItems": 5
@@ -656,7 +657,7 @@
               "items": {
                 "type": "array",
                 "items": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "minItems": 6,
                 "maxItems": 6
@@ -711,7 +712,7 @@
               "items": {
                 "type": "array",
                 "items": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "minItems": 4,
                 "maxItems": 4
