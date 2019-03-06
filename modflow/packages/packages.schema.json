@@ -123,14 +123,11 @@
           "minLength": 1
         },
         "external_path": {
-          "oneOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string"
-            }
-          ]
+          "oneOf": [{
+            "type": "null"
+          }, {
+            "type": "string"
+          }]
         },
         "verbose": {
           "type": "boolean"
@@ -144,24 +141,24 @@
           "type": "object"
         },
         "ibound": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "array"
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          }]
         },
         "strt": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "array"
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          }]
         },
         "ifrefm": {
           "type": "boolean"
@@ -182,24 +179,18 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "array"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "array"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -222,172 +213,91 @@
           "type": "number"
         },
         "delr": {
-          "oneOf": [
-            {
+          "oneOf": [{
               "type": "number"
-            },
-            {
+            }, {
+
               "type": "array",
               "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
+                "type": "number"
               }
             }
+
           ]
         },
         "delc": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "number"
+          }, {
+
+            "type": "array",
+            "items": {
               "type": "number"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
             }
-          ]
+          }]
         },
         "laycbd": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          }]
         },
         "top": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            }
-          ]
+          "$ref": "#/definitions/layervalue"
         },
         "btom": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          }]
         },
         "perlen": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
             }
-          ]
+          }]
         },
         "nstp": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
             }
-          ]
+          }]
         },
         "tsmult": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
             }
-          ]
+          }]
         },
         "steady": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "boolean"
+          }, {
+            "type": "array",
+            "items": {
               "type": "boolean"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "boolean"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "boolean"
-              }
             }
-          ]
+          }]
         },
         "itmuni": {
           "type": "number"
@@ -399,23 +309,11 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
           "type": "null"
@@ -433,14 +331,11 @@
           "type": "string"
         },
         "start_dateteim": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -457,94 +352,75 @@
           "type": "number"
         },
         "chedfm": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         },
         "cddnfm": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         },
         "cboufm": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         },
         "compact": {
           "type": "boolean"
         },
         "stress_period_data": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
+                "oneOf": [{
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                }, {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }]
               }
-            },
-            {
-              "type": "null"
             }
-          ]
+          }, {
+            "type": "null"
+          }]
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
-              "type": "null"
+          "oneOf": [{
+            "type": "array",
+            "items": {
+              "type": "number"
             }
-          ]
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "string"
-            },
-            {
-              "type": "null"
             }
-          ]
+          }, {
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -570,14 +446,11 @@
           "type": "number"
         },
         "irefsp": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "roff": {
           "type": "number"
@@ -589,40 +462,28 @@
           "type": "null"
         },
         "mlay": {
-          "oneOf": [
-            {
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "object"
+          }, {
+            "type": "null"
+          }]
         },
         "time_series_data": {
-          "oneOf": [
-            {
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "array"
+          }, {
+            "type": "null"
+          }]
         },
         "names": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            },
-            {
-              "type": "null"
+          "oneOf": [{
+            "type": "array",
+            "items": {
+              "type": "string"
             }
-          ]
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -633,26 +494,24 @@
           "type": "object"
         },
         "stress_period_data": {
-          "oneOf": [
-            {
-              "type": "object",
-              "properties": {
-                "number": {
+          "oneOf": [{
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "array",
+                "items": {
                   "type": "array",
                   "items": {
-                    "type": "array",
-                    "items": {
-                      "type": "number",
-                      "minItems": 5
-                    }
+                    "type": "number",
+                    "minItems": 5,
+                    "maxItems": 5
                   }
                 }
               }
-            },
-            {
-              "type": "null"
             }
-          ]
+          }, {
+            "type": "null"
+          }]
         },
         "dtype": {
           "type": "null"
@@ -664,24 +523,18 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -692,36 +545,31 @@
           "type": "object"
         },
         "ipakcb": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "stress_period_data": {
-          "oneOf": [
-            {
-              "type": "object",
-              "properties": {
-                "number": {
+          "oneOf": [{
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "array",
+                "items": {
                   "type": "array",
                   "items": {
-                    "type": "array",
-                    "items": {
-                      "type": "number",
-                      "minItems": 5
-                    }
+                    "type": "number",
+                    "minItems": 5,
+                    "maxItems": 5
                   }
                 }
               }
-            },
-            {
-              "type": "null"
             }
-          ]
+          }, {
+            "type": "null"
+          }]
         },
         "dtype": {
           "type": "null"
@@ -736,24 +584,18 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -767,69 +609,54 @@
           "type": "number"
         },
         "ipakcb": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "rech": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
+                "type": "number"
               }
-            },
-            {
-              "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "irch": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
+                "type": "number"
               }
-            },
-            {
-              "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "extension": {
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -840,36 +667,31 @@
           "type": "object"
         },
         "ipakcb": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "stress_period_data": {
-          "oneOf": [
-            {
-              "type": "object",
-              "properties": {
-                "number": {
+          "oneOf": [{
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "array",
+                "items": {
                   "type": "array",
                   "items": {
-                    "type": "array",
-                    "items": {
-                      "type": "number",
-                      "minItems": 6
-                    }
+                    "type": "number",
+                    "minItems": 6,
+                    "maxItems": 6
                   }
                 }
               }
-            },
-            {
-              "type": "null"
             }
-          ]
+          }, {
+            "type": "null"
+          }]
         },
         "dtype": {
           "type": "null"
@@ -881,24 +703,18 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -909,35 +725,31 @@
           "type": "object"
         },
         "ipakcb": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "stress_period_data": {
-          "oneOf": [
-            {
-              "type": "object",
-              "properties": {
-                "number": {
+          "oneOf": [{
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "array",
+                "items": {
                   "type": "array",
                   "items": {
-                    "type": "array",
-                    "items": {
-                      "type": "number"
-                    }
+                    "type": "number",
+                    "minItems": 4,
+                    "maxItems": 4
                   }
                 }
               }
-            },
-            {
-              "type": "null"
             }
-          ]
+          }, {
+            "type": "null"
+          }]
         },
         "dtype": {
           "type": "null"
@@ -952,24 +764,18 @@
           "type": "boolean"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -980,124 +786,61 @@
           "type": "object"
         },
         "laytyp": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "layavg": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "chani": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "layvka": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "laywet": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "ipakcb": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "hdry": {
           "type": "number"
@@ -1115,179 +858,149 @@
           "type": "number"
         },
         "hk": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
-                "type": "array",
-                "items": {
-                  "type": "array"
-                }
+                "type": "array"
               }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "hani": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "vka": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
-                "type": "array",
-                "items": {
-                  "type": "array"
-                }
+                "type": "array"
               }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "ss": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "sy": {
-          "oneOf": [
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
-                "type": "array",
-                "items": {
-                  "type": "array"
-                }
+                "type": "array"
               }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "vkcb": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "number"
-            }
-          ]
-        },
-        "wetdry": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "number"
+          }]
+        },
+        "wetdry": {
+          "oneOf": [{
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "storagecoefficient": {
           "type": "boolean"
@@ -1308,24 +1021,18 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -1336,124 +1043,101 @@
           "type": "object"
         },
         "laytyp": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "layavg": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "chani": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "layvka": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "laywet": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
+          "oneOf": [{
+            "type": "array",
+            "items": {
               "type": "array",
               "items": {
                 "type": "number"
               }
-            },
-            {
+            }
+          }, {
+            "type": "array",
+            "items": {
               "type": "number"
             }
-          ]
+          }, {
+            "type": "number"
+          }]
         },
         "ipakcb": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "hdry": {
           "type": "number"
@@ -1462,181 +1146,70 @@
           "type": "number"
         },
         "hk": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "array"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
-              "type": "number"
+          "oneOf": [{
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          },
+          {
+            "type": "number"
+          }]
         },
         "hani": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
-              "type": "number"
+          "oneOf":  [{
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          },
+          {
+            "type": "number"
+          }]
         },
         "vka": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "array"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
-              "type": "number"
+          "oneOf": [{
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          }, 
+          {
+            "type": "number"
+          }]
         },
         "ss": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "array"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
-              "type": "number"
+          "oneOf": [{
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          },
+          {
+            "type": "number"
+          }]
         },
         "sy": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "array"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
-              "type": "number"
+          "oneOf": [{
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          },
+          {
+            "type": "number"
+          }]
         },
         "vkcb": {
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "array"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            },
-            {
-              "type": "number"
+          "oneOf": [{
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/layervalue"
             }
-          ]
+          },
+          {
+            "type": "number"
+          }]
         },
         "noparcheck": {
           "type": "boolean"
@@ -1645,24 +1218,18 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -1709,24 +1276,18 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -1830,24 +1391,18 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
     },
@@ -1876,26 +1431,36 @@
           "type": "string"
         },
         "unitnumber": {
-          "oneOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "number"
+          }, {
+            "type": "null"
+          }]
         },
         "filenames": {
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "oneOf": [{
+            "type": "string"
+          }, {
+            "type": "null"
+          }]
         }
       }
-    }
+    },
+    "layervalue": {
+      "oneOf": [{
+        "type": "number",
+        "description": "One value for all in the layer"
+      }, {
+        "type": "array",
+        "description": "Rows",
+        "items": {
+          "type": "array",
+          "description": "Cols",
+          "items": {
+            "type": "number"
+          }
+        }
+      }]
+    },
   }
 }
