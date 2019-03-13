@@ -183,6 +183,8 @@
             "type": "number"
           }, {
             "type": "array"
+          },{
+            "type": "null"
           }]
         },
         "filenames": {
