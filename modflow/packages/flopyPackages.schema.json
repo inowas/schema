@@ -8,7 +8,8 @@
     "project",
     "model_id",
     "calculation_id",
-    "data"
+    "mf",
+    "mt"
   ],
   "properties": {
     "version": {
