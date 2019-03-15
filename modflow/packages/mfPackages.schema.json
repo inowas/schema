@@ -1592,7 +1592,10 @@
           "type": "string"
         },
         "output_file_format": {
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "package_flows": {
           "type": "string"
