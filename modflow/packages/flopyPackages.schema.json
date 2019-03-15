@@ -7,7 +7,6 @@
     "author",
     "project",
     "model_id",
-    "calculation_id",
     "mf",
     "mt"
   ],
@@ -24,11 +23,6 @@
     "model_id": {
       "type": "string",
       "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-    },
-    "calculation_id": {
-      "title": "MD5-Hash of the content",
-      "type": "string",
-      "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32}|)$"
     },
     "mf": {
       "$ref": "./mfPackages.schema.json"
