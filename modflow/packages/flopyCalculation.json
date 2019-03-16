@@ -36,10 +36,10 @@
       ],
       "properties": {
         "mf": {
-          "$ref": "./mfPackages.schema.json"
+          "$ref": "./mfPackages.json"
         },
         "mt": {
-          "$ref": "./mtPackages.schema.json"
+          "$ref": "./mtPackages.json"
         }
       },
       "additionalProperties": false
