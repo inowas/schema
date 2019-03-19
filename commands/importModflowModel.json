@@ -16,6 +16,10 @@
     "payload": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
         "name": {
           "type": "string",
           "minLength": 3,
@@ -109,6 +113,7 @@
         }
       },
       "required": [
+        "id",
         "name",
         "description",
         "public",
