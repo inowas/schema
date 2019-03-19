@@ -74,35 +74,8 @@
               }
             }
           },
-          "geometry": {
-            "$ref": "../geojson/polygon.json"
-          },
-          "bounding_box": {
-            "$ref": "../modflow/boundingBox.json"
-          },
-          "grid_size": {
-            "$ref": "../modflow/gridSize.json"
-          },
-          "cells": {
-            "$ref": "../modflow/cells.json"
-          },
-          "stressperiods": {
-            "$ref": "../modflow/stressperiods.json"
-          },
-          "length_unit": {
-            "$ref": "../modflow/lengthUnit.json"
-          },
-          "time_unit": {
-            "$ref": "../modflow/timeUnit.json"
-          },
           "required": [
-            "geometry",
-            "bounding_box",
-            "grid_size",
-            "cells",
-            "stressperiods",
-            "length_unit",
-            "time_unit"
+            "layers"
           ]
         },
         "boundaries": {
