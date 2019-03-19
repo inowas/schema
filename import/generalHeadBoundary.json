@@ -4,24 +4,54 @@
   "properties": {
     "type": {
       "type": "string",
-      "pattern": "^FeatureCollection$"
+      "pattern": "^ghb$"
     },
-    "features": {
+    "name": {
+      "type": "string"
+    },
+    "geometry": {
+      "$ref": "../geojson/linestring.json"
+    },
+    "layers": {
+      "$ref": "../modflow/layers.json"
+    },
+    "ops": {
       "type": "array",
       "items": {
-        "oneOf": [
-          {
-            "$ref": "./generalHeadFeature.json"
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
           },
-          {
-            "$ref": "../modflow/boundary/generalHeadObservationPointFeature.json"
+          "geometry": {
+            "$ref": "../geojson/point.json"
+          },
+          "sp_values": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "description": "0: stage (float), 1: cond (float)",
+                "type": "number",
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
           }
+        },
+        "required": [
+          "name",
+          "geometry",
+          "sp_values"
         ]
       }
     }
   },
   "required": [
     "type",
-    "features"
+    "name",
+    "geometry",
+    "layers",
+    "ops"
   ]
 }

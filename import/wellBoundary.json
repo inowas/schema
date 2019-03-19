@@ -4,59 +4,35 @@
   "properties": {
     "type": {
       "type": "string",
-      "pattern": "^Feature$"
+      "pattern": "^wel$"
     },
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z0-9_\\-]{3,255}$"
+    "name": {
+      "type": "string"
     },
     "geometry": {
       "$ref": "../geojson/point.json"
     },
-    "properties": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "minLength": 1,
-          "maxLength": 255
-        },
-        "type": {
-          "type": "string",
-          "pattern": "^wel$"
-        },
-        "layers": {
-          "$ref": "../modflow/layers.json"
-        },
-        "well_type": {
-          "type": "string",
-          "maxLength": 4
-        },
-        "sp_values": {
-          "type": "array",
-          "items": {
-            "type": "array",
-            "items": {
-              "description": "0: pumping rate",
-              "type": "number",
-              "minItems": 1,
-              "maxItems": 1
-            }
-          }
+    "layers": {
+      "$ref": "../modflow/layers.json"
+    },
+    "sp_values": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "description": "0: pumping rate",
+          "type": "number",
+          "minItems": 1,
+          "maxItems": 1
         }
-      },
-      "required": [
-        "name",
-        "type",
-        "layers",
-        "sp_values"
-      ]
+      }
     }
   },
   "required": [
     "type",
-    "id",
+    "name",
     "geometry",
-    "properties"
+    "layers",
+    "sp_values"
   ]
 }
