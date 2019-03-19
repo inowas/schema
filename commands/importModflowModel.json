@@ -8,7 +8,7 @@
     },
     "message_name": {
       "type": "string",
-      "pattern": "^importFlopyModel$"
+      "pattern": "^importModflowModel$"
     },
     "metadata": {
       "type": "object"
