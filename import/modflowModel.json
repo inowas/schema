@@ -22,7 +22,7 @@
         "$ref": "../modflow/gridSize.json"
       },
       "stressperiods": {
-        "$ref": "../modflow/stressperiods.json"
+        "$ref": "./stressperiods.json"
       },
       "length_unit": {
         "$ref": "../modflow/lengthUnit.json"
