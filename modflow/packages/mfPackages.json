@@ -680,7 +680,7 @@
             }
           ]
         },
-        "rech": {
+        "stress_period_data": {
           "type": "object",
           "additionalProperties": false,
           "patternProperties": {
