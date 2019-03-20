@@ -681,7 +681,13 @@
           ]
         },
         "rech": {
-          "$ref": "#/definitions/layervalue"
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-9]+": {
+              "$ref": "#/definitions/layervalue"
+            }
+          }
         },
         "irch": {
           "$ref": "#/definitions/layervalue"
