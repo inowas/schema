@@ -19,7 +19,12 @@
         "$ref": "../geojson/polygon.json"
       },
       "grid_size": {
-        "$ref": "../modflow/gridSize.json"
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 2,
+        "maxItems": 2
       },
       "stressperiods": {
         "$ref": "./stressperiods.json"
