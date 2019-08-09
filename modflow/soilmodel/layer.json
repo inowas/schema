@@ -18,21 +18,6 @@
     "number": {
       "type": "integer"
     },
-    "top": {
-      "$ref": "./layerValue.json"
-    },
-    "botm": {
-      "$ref": "./layerValue.json"
-    },
-    "hk": {
-      "$ref": "./layerValue.json"
-    },
-    "hani": {
-      "$ref": "./layerValue.json"
-    },
-    "vka": {
-      "$ref": "./layerValue.json"
-    },
     "layavg": {
       "type": "number"
     },
@@ -42,11 +27,11 @@
     "laywet": {
       "type": "number"
     },
-    "ss": {
-      "$ref": "./layerValue.json"
-    },
-    "sy": {
-      "$ref": "./layerValue.json"
+    "parameters": {
+      "type": "array",
+      "items": {
+        "$ref": "./layerParameter.json"
+      }
     }
   },
   "required": [
@@ -54,15 +39,9 @@
     "name",
     "description",
     "number",
-    "top",
-    "botm",
-    "hk",
-    "hani",
-    "vka",
     "layavg",
     "laytyp",
     "laywet",
-    "ss",
-    "sy"
+    "parameters"
   ]
 }
