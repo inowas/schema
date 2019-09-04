@@ -38,6 +38,9 @@
         "mf": {
           "$ref": "./mfPackages.json"
         },
+        "mp": {
+            "type": "object"
+        },
         "mt": {
           "$ref": "./mtPackages.json"
         },
