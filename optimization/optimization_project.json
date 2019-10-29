@@ -430,14 +430,15 @@
       "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
     },
     "minMaxObj": {
-      "type": "array",
-      "minLength": 2,
-      "maxLength": 2,
+      "type": "object",
       "required": ["min", "max"],
-      "items": {
-        "allOf": [{
+      "properties": {
+        "min": {
           "type": "number"
-        }]
+        },
+        "max": {
+          "type": "number"
+        }
       }
     },
     "minMaxResultObjGA": {
