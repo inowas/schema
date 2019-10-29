@@ -30,25 +30,7 @@
       "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32}|)$"
     },
     "data": {
-      "type": "object",
-      "required": [
-        "mf"
-      ],
-      "properties": {
-        "mf": {
-          "$ref": "./mfPackages.json"
-        },
-        "mp": {
-            "type": "object"
-        },
-        "mt": {
-          "$ref": "./mtPackages.json"
-        },
-        "swt": {
-          "$ref": "./swtPackages.json"
-        }
-      },
-      "additionalProperties": false
+      "$ref": "./modflow_model_data.json"
     }
   }
 }
