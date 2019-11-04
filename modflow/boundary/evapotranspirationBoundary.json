@@ -32,7 +32,7 @@
           "$ref": "../../modflow/cells.json"
         },
         "nevtop": {
-            "type": "number"
+          "type": "number"
         },
         "sp_values": {
           "type": "array",
@@ -41,8 +41,8 @@
             "items": {
               "description": "0: maximum evt, 1: surface evt, 2: depth evt",
               "type": "number",
-              "minItems": 1,
-              "maxItems": 1
+              "minItems": 3,
+              "maxItems": 3
             }
           }
         }

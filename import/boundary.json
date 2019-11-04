@@ -3,7 +3,10 @@
     "type": "object",
     "oneOf" : [
         {"$ref": "./constantHeadBoundary.json"},
+        {"$ref": "./drainageBoundary.json"},
+        {"$ref": "./evapotranspirationBoundary.json"},
         {"$ref": "./generalHeadBoundary.json"},
+        {"$ref": "./headObservationWell.json"},
         {"$ref": "./rechargeBoundary.json"},
         {"$ref": "./riverBoundary.json"},
         {"$ref": "./wellBoundary.json"}
