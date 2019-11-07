@@ -27,7 +27,6 @@
   },
   "required": [
     "id",
-    "data",
     "parameter",
     "priority",
     "zoneId"
