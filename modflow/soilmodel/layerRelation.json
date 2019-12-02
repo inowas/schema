@@ -12,9 +12,23 @@
     },
     "value": {
       "$ref": "./layerValue.json"
+    },
+    "parameter": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "number"
+    },
+    "zoneId": {
+      "type": "string",
+      "pattern": "^[a-z0-9_\\-]{1,255}$",
+      "maxLength": 255
     }
   },
   "required": [
-    "id"
+    "id",
+    "parameter",
+    "priority",
+    "zoneId"
   ]
 }
