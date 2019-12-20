@@ -23,13 +23,7 @@
         },
         "type": {
           "type": "string",
-          "pattern": "^hob$"
-        },
-        "layers": {
-          "$ref": "../../modflow/layers.json"
-        },
-        "cells": {
-          "$ref": "../../modflow/cells.json"
+          "pattern": "^op$"
         },
         "date_times": {
           "type": "array",
@@ -43,10 +37,10 @@
           "items": {
             "type": "array",
             "items": {
-              "description": "0: observed head",
+              "description": "0: head (float), 1: flow (float)",
               "type": "number",
-              "minItems": 1,
-              "maxItems": 1
+              "minItems": 2,
+              "maxItems": 2
             }
           }
         }
@@ -54,8 +48,6 @@
       "required": [
         "name",
         "type",
-        "cells",
-        "layers",
         "date_times",
         "sp_values"
       ]
