@@ -11,7 +11,7 @@
       "pattern": "^[a-z0-9_\\-]{3,255}$"
     },
     "geometry": {
-      "$ref": "../../geojson/point.json"
+      "$ref": "../../geojson/linestring.json"
     },
     "properties": {
       "type": "object",
@@ -23,41 +23,20 @@
         },
         "type": {
           "type": "string",
-          "pattern": "^hob$"
+          "pattern": "^fhb$"
         },
         "layers": {
           "$ref": "../../modflow/layers.json"
         },
         "cells": {
           "$ref": "../../modflow/cells.json"
-        },
-        "date_times": {
-          "type": "array",
-          "items": {
-            "pattern": "^\\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$",
-            "type": "string"
-          }
-        },
-        "sp_values": {
-          "type": "array",
-          "items": {
-            "type": "array",
-            "items": {
-              "description": "0: observed head",
-              "type": "number",
-              "minItems": 1,
-              "maxItems": 1
-            }
-          }
         }
       },
       "required": [
         "name",
         "type",
         "cells",
-        "layers",
-        "date_times",
-        "sp_values"
+        "layers"
       ]
     }
   },
