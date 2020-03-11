@@ -20,12 +20,7 @@
           "$ref": "../geojson/polygon.json"
         },
         "grid_size": {
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
-          "minItems": 2,
-          "maxItems": 2
+          "$ref": "../modflow/gridSize.json"
         },
         "stressperiods": {
           "$ref": "./stressperiods.json"
@@ -46,18 +41,7 @@
       ]
     },
     "soilmodel": {
-      "type": "object",
-      "properties": {
-        "layers": {
-          "type": "array",
-          "items": {
-            "$ref": "./layer.json"
-          }
-        }
-      },
-      "required": [
-        "layers"
-      ]
+
     },
     "boundaries": {
       "type": "array",

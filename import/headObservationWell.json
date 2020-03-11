@@ -15,18 +15,8 @@
     "layers": {
       "$ref": "../modflow/layers.json"
     },
-    "sp_values": {
-      "type": "array",
-      "items": {
-        "type": "array",
-        "items": {
-          "description": "0: observed head",
-          "type": "number",
-          "minItems": 1,
-          "maxItems": 1
-        }
-      }
-    }
+    "date_times": {},
+    "sp_values": {}
   },
   "required": [
     "type",
