@@ -28,9 +28,9 @@
             "$ref": "./lengthUnit.json"
         },
         "intersection": {
-            "maximum": 100,
+            "maximum": 1,
             "minimum": 0,
-            "type": "integer"
+            "type": "number"
         },
         "rotation": {
             "maximum": 360,
