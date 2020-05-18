@@ -27,6 +27,12 @@
           "minItems": 2,
           "maxItems": 2
         },
+        "intersection": {
+          "type": "number"
+        },
+        "rotation": {
+          "type": "number"
+        },
         "stressperiods": {
           "$ref": "./stressperiods.json"
         },

@@ -28,14 +28,10 @@
             "$ref": "./lengthUnit.json"
         },
         "intersection": {
-            "maximum": 1,
-            "minimum": 0,
             "type": "number"
         },
         "rotation": {
-            "maximum": 360,
-            "minimum": 0,
-            "type": "integer"
+            "type": "number"
         },
         "time_unit": {
             "$ref": "./timeUnit.json"
