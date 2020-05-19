@@ -45,6 +45,12 @@
           "cells": {
             "$ref": "../modflow/cells.json"
           },
+          "intersection": {
+            "type": "number"
+          },
+          "rotation": {
+            "type": "number"
+          },
           "stressperiods": {
             "$ref": "../modflow/stressperiods.json"
           },

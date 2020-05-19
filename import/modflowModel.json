@@ -22,6 +22,12 @@
         "grid_size": {
           "$ref": "../modflow/gridSize.json"
         },
+        "intersection": {
+          "type": "number"
+        },
+        "rotation": {
+          "type": "number"
+        },
         "stressperiods": {
           "$ref": "./stressperiods.json"
         },
