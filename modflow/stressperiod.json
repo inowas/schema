@@ -10,7 +10,7 @@
       "type": "integer"
     },
     "tsmult": {
-      "type": "integer"
+      "type": "number"
     },
     "steady": {
       "type": "boolean"
