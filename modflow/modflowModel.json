@@ -27,6 +27,12 @@
         "length_unit": {
             "$ref": "./lengthUnit.json"
         },
+        "intersection": {
+            "type": "number"
+        },
+        "rotation": {
+            "type": "number"
+        },
         "time_unit": {
             "$ref": "./timeUnit.json"
         },

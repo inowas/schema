@@ -1,2 +1,3 @@
-# schema.inowas.com
+# schema
+
 schema.inowas.com
