@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "message_name": {
+      "type": "string",
+      "pattern": "^reactivateUser$"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "user_id"
+      ]
+    }
+  },
+  "required": [
+    "uuid",
+    "message_name",
+    "metadata",
+    "payload"
+  ]
+}

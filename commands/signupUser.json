@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "message_name": {
+      "type": "string",
+      "pattern": "^signupUser$"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "email",
+        "password"
+      ]
+    }
+  },
+  "required": [
+    "uuid",
+    "message_name",
+    "metadata",
+    "payload"
+  ]
+}
