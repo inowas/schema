@@ -6,6 +6,7 @@
         {"$ref": "./evapotranspirationBoundary.json"},
         {"$ref": "./generalHeadBoundary.json"},
         {"$ref": "./flowAndHeadBoundary.json"},
+        {"$ref": "./lakeBoundary.json"},
         {"$ref": "./rechargeBoundary.json"},
         {"$ref": "./riverBoundary.json"},
         {"$ref": "./wellBoundary.json"},
