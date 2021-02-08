@@ -31,6 +31,9 @@
     "ghb": {
       "$ref": "#/definitions/ghbPackage"
     },
+    "lak": {
+      "$ref": "#/definitions/lakPackage"
+    },
     "rch": {
       "$ref": "#/definitions/rchPackage"
     },
@@ -598,6 +601,112 @@
         },
         "options": {
           "type": "null"
+        },
+        "extension": {
+          "type": "string"
+        },
+        "unitnumber": {
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "filenames": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "lakPackage": {
+      "type": "object",
+      "properties": {
+        "nlakes": {
+          "type": "number"
+        },
+        "ipakcb": {
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lwrt": {
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          ]
+        },
+        "theta": {
+          "type": "number"
+        },
+        "nssitr": {
+          "type": "number"
+        },
+        "sscncr": {
+          "type": "number"
+        },
+        "surfdepth": {
+          "type": "number"
+        },
+        "stages": {
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          ]
+        },
+        "stage_range": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "lakarr": {
+          "$ref": "#/definitions/layervalue"
+        },
+        "bdlknc": {
+          "$ref": "#/definitions/layervalue"
+        },
+        "sill_data": {},
+        "flux_data": {},
+        "options": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "extension": {
           "type": "string"

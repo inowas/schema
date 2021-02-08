@@ -14,25 +14,13 @@
     },
     "layers": {
       "$ref": "../modflow/layers.json"
-    },
-    "sp_values": {
-      "type": "array",
-      "items": {
-        "type": "array",
-        "items": {
-          "description": "0: precipitation, 1: evapotranspiration, 2: runoff, 3: water removal, 4: minimum stage, 5: maximum stage",
-          "type": "number",
-          "minItems": 4,
-          "maxItems": 6
-        }
-      }
     }
   },
+  "additionalItems": true,
   "required": [
     "type",
     "name",
     "geometry",
-    "layers",
-    "sp_values"
+    "layers"
   ]
 }
