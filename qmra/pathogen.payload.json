@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "object": {
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "group": {
+        "type": "string"
+      },
+      "simulate": {
+        "type": "number"
+      },
+      "type": {
+        "enum": ["log10_norm", "uniform"]
+      },
+      "min": {
+        "type": "number"
+      },
+      "max": {
+        "type": "number"
+      },
+      "reference": {
+        "type": "string"
+      }
+    },
+    "required": ["id", "name", "group", "simulate", "type", "min", "max", "reference"]
+  }
+}
