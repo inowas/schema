@@ -42,6 +42,9 @@
               "maxItems": 1
             }
           }
+        },
+        "isExcludedFromCalculation": {
+          "type": "boolean"
         }
       },
       "required": [

@@ -30,6 +30,9 @@
         },
         "cells": {
           "$ref": "../../modflow/cells.json"
+        },
+        "isExcludedFromCalculation": {
+          "type": "boolean"
         }
       },
       "required": [

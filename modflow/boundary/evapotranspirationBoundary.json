@@ -45,6 +45,9 @@
               "maxItems": 3
             }
           }
+        },
+        "isExcludedFromCalculation": {
+          "type": "boolean"
         }
       },
       "required": [
