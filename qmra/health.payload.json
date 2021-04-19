@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "object": {
+    "properties": {
+      "PathogenID": {
+        "type": "number"
+      },
+      "PathogenName": {
+        "type": "string"
+      },
+      "infection_to_illness": {
+        "type": "number"
+      },
+      "dalys_per_case": {
+        "type": "number"
+      }
+    },
+    "required": ["PathogenID", "PathogenName"]
+  }
+}

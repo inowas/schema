@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "const": "value"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": ["name", "type", "value"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "const": "triangle"
+        },
+        "min": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number"
+        },
+        "mode": {
+          "type": "number"
+        },
+        "mean": {
+          "type": "number"
+        }
+      },
+      "required": ["name", "type", "min", "max", "mode", "mean"]
+    }
+  ]
+}

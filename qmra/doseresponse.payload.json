@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "object": {
+    "properties": {
+      "PathogenID": {
+        "type": "number"
+      },
+      "PathogenName": {
+        "type": "string"
+      },
+      "PathogenGroup": {
+        "type": "string"
+      },
+      "Best fit model*": {
+        "type": "string"
+      },
+      "alpha": {
+        "type": "number"
+      },
+      "k": {
+        "type": "number"
+      },
+      "N50": {
+        "type": "number"
+      },
+      "Host type": {
+        "type": "string"
+      },
+      "Dose units": {
+        "type": "string"
+      },
+      "Route": {
+        "type": "string"
+      },
+      "Response": {
+        "type": "string"
+      },
+      "Reference": {
+        "type": "string"
+      },
+      "Link": {
+        "type": "string"
+      }
+    },
+    "required": ["PathogenID", "PathogenName", "PathogenGroup", "Best fit model*", "Host type", "Dose units", "Route", "Response", "Reference", "Link"]
+  }
+}
