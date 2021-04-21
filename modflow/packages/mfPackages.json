@@ -1631,14 +1631,16 @@
           "items": {
             "type": "array",
             "description": "Cols",
-            "items": [
-              {
-                "type": "number"
-              },
-              {
-                "type": "null"
-              }
-            ]
+            "items": {
+              "oneOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
           }
         }
       ]

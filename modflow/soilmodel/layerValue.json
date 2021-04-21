@@ -1,20 +1,27 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "oneOf" : [
-        {
-            "type": "number",
-            "description": "One value for all in the layer"
-        },
-        {
-            "type": "array",
-            "description": "Rows",
-            "items": {
-                "type": "array",
-                "description": "Cols",
-                "items": {
-                    "type": "number"
-                }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "oneOf": [
+    {
+      "type": "number",
+      "description": "One value for all in the layer"
+    },
+    {
+      "type": "array",
+      "description": "Rows",
+      "items": {
+        "type": "array",
+        "description": "Cols",
+        "items": {
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
             }
+          ]
         }
-    ]
+      }
+    }
+  ]
 }
