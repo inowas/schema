@@ -1631,9 +1631,14 @@
           "items": {
             "type": "array",
             "description": "Cols",
-            "items": {
-              "type": "number"
-            }
+            "items": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         }
       ]
