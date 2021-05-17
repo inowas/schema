@@ -1,58 +1,129 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "KWB - QMRA",
-  "type": "object",
   "description": "This object represents all properties of the qmra input object.",
-  "additionalProperties": false,
-  "required": ["config"],
-  "properties": {
-    "config": {
+  "oneOf": [
+    {
       "type": "object",
-      "required": ["exposure", "inflow", "treatment", "doseresponse", "health"],
+      "additionalProperties": true,
+      "required": [
+        "config"
+      ],
       "properties": {
-        "exposure": {
-          "type": "array",
-          "items": {
-            "$ref": "./exposure.payload.json"
-          }
-        },
-        "inflow": {
-          "type": "array",
-          "items": {
-            "$ref": "./pathogen.payload.json"
-          }
-        },
-        "treatment": {
+        "config": {
           "type": "object",
-          "required": ["processes", "schemes"],
+          "required": [
+            "exposure",
+            "inflow",
+            "treatment",
+            "doseresponse",
+            "health"
+          ],
           "properties": {
-            "processes": {
+            "exposure": {
               "type": "array",
               "items": {
-                "$ref": "./process.payload.json"
+                "$ref": "./exposure.payload.json"
               }
             },
-            "schemes": {
+            "inflow": {
               "type": "array",
               "items": {
-                "$ref": "./scheme.payload.json"
+                "$ref": "./pathogen.payload.json"
+              }
+            },
+            "treatment": {
+              "type": "object",
+              "required": [
+                "processes",
+                "schemes"
+              ],
+              "properties": {
+                "processes": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "./process.payload.json"
+                  }
+                },
+                "schemes": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "./scheme.payload.json"
+                  }
+                }
+              }
+            },
+            "doseresponse": {
+              "type": "array",
+              "items": {
+                "$ref": "./doseresponse.payload.json"
+              }
+            },
+            "health": {
+              "type": "array",
+              "items": {
+                "$ref": "./health.payload.json"
               }
             }
           }
-        },
-        "doseresponse": {
-          "type": "array",
-          "items": {
-            "$ref": "./doseresponse.payload.json"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "exposure",
+        "inflow",
+        "treatment",
+        "doseresponse",
+        "health"
+      ],
+      "exposure": {
+        "type": "array",
+        "items": {
+          "$ref": "./exposure.payload.json"
+        }
+      },
+      "inflow": {
+        "type": "array",
+        "items": {
+          "$ref": "./pathogen.payload.json"
+        }
+      },
+      "treatment": {
+        "type": "object",
+        "required": [
+          "processes",
+          "schemes"
+        ],
+        "properties": {
+          "processes": {
+            "type": "array",
+            "items": {
+              "$ref": "./process.payload.json"
+            }
+          },
+          "schemes": {
+            "type": "array",
+            "items": {
+              "$ref": "./scheme.payload.json"
+            }
           }
-        },
-        "health": {
-          "type": "array",
-          "items": {
-            "$ref": "./health.payload.json"
-          }
+        }
+      },
+      "doseresponse": {
+        "type": "array",
+        "items": {
+          "$ref": "./doseresponse.payload.json"
+        }
+      },
+      "health": {
+        "type": "array",
+        "items": {
+          "$ref": "./health.payload.json"
         }
       }
     }
-  }
+  ]
 }
