@@ -15,7 +15,7 @@
         "type": "number"
       },
       "type": {
-        "enum": ["log10_norm", "log10_removal", "uniform", "normal"]
+        "enum": ["log10_norm", "log10_uniform", "uniform", "norm", "triangle", "lognorm"]
       },
       "min": {
         "type": "number"
