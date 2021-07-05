@@ -33,12 +33,9 @@
         },
         "mode": {
           "type": "number"
-        },
-        "mean": {
-          "type": "number"
         }
       },
-      "required": ["name", "type", "min", "max", "mode", "mean"]
+      "required": ["name", "type", "min", "max", "mode"]
     }
   ]
 }
