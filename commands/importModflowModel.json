@@ -89,6 +89,18 @@
           "items": {
             "$ref": "../modflow/boundary/boundary.json"
           }
+        },
+        "transport": {
+          "type": "object"
+        },
+        "variableDensity": {
+          "type": "object"
+        },
+        "calculation": {
+          "type": "object"
+        },
+        "packages": {
+          "type": "object"
         }
       },
       "required": [
