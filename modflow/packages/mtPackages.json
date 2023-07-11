@@ -171,10 +171,30 @@
           "type": "boolean"
         },
         "nprs": {
-          "type": "number"
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "timprs": {
-          "type": "null"
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "obs": {
           "type": "null"
