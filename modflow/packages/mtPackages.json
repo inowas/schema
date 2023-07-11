@@ -192,10 +192,15 @@
           "type": "null"
         },
         "nstp": {
-          "type": "null"
+          "type": "number",
+          "nullable": true
         },
         "tsmult": {
-          "type": "null"
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "nullable": true
         },
         "ssflag": {
           "type": "null"
@@ -214,8 +219,12 @@
         },
         "species_names": {
           "oneOf": [
-            {"type": "null"},
-            {"type": "array"}
+            {
+              "type": "null"
+            },
+            {
+              "type": "array"
+            }
           ]
         },
         "extension": {
