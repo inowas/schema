@@ -212,15 +212,10 @@
           "type": "null"
         },
         "nstp": {
-          "type": "number",
-          "nullable": true
+          "type": "null"
         },
         "tsmult": {
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
-          "nullable": true
+          "type": "null"
         },
         "ssflag": {
           "type": "null"
