@@ -687,14 +687,16 @@
             "type": "array",
             "items": {
               "type": "number"
-            }
+            },
+            "minItems": 2,
+            "maxItems": 2
           }
         },
         "lakarr": {
-          "$ref": "#/definitions/layervalue"
+          "$ref": "#/definitions/grid_3d"
         },
         "bdlknc": {
-          "$ref": "#/definitions/layervalue"
+          "$ref": "#/definitions/grid_3d"
         },
         "sill_data": {},
         "flux_data": {},
@@ -1644,6 +1646,21 @@
           }
         }
       ]
+    },
+    "grid_3d": {
+      "type": "array",
+      "description": "Layers",
+      "items": {
+        "type": "array",
+        "description": "Rows",
+        "items": {
+          "type": "array",
+          "description": "Cols",
+          "items": {
+            "type": "number"
+          }
+        }
+      }
     }
   }
 }
