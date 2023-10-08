@@ -1,6 +1,5 @@
 variables:
   SCHEMA_IMAGE: inowas/schema
-  SCHEMA_SSH_CREDENTIALS: root@schema2.inowas.com
   SCHEMA_PATH: /srv/docker/schema.inowas.com
 
 stages:
@@ -34,10 +33,10 @@ deploy:
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     - ssh-add <(echo "$SSH_PRIVATE_KEY")
   script:
-    - ssh -p22 $SCHEMA_SSH_CREDENTIALS "cd $SCHEMA_PATH && docker compose down"
-    - scp -P22 ./infrastructure/schema/docker-compose.yml $SCHEMA_SSH_CREDENTIALS:/$SCHEMA_PATH/docker-compose.yml
-    - ssh -p22 $SCHEMA_SSH_CREDENTIALS "cd $SCHEMA_PATH && docker compose pull"
-    - ssh -p22 $SCHEMA_SSH_CREDENTIALS "cd $SCHEMA_PATH && docker compose up -d --force-recreate"
+    - ssh -p22 $SSH_CREDENTIALS "cd $SCHEMA_PATH && docker compose down"
+    - scp -P22 ./infrastructure/schema/docker-compose.yml $SSH_CREDENTIALS:/$SCHEMA_PATH/docker-compose.yml
+    - ssh -p22 $SSH_CREDENTIALS "cd $SCHEMA_PATH && docker compose pull"
+    - ssh -p22 $SSH_CREDENTIALS "cd $SCHEMA_PATH && docker compose up -d --force-recreate"
   environment:
     name: development
     url: https://schema.inowas.com
