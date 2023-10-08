@@ -22,7 +22,7 @@ publish:
     - docker push $SCHEMA_IMAGE:$CI_COMMIT_SHA
     - docker push $SCHEMA_IMAGE:latest
   only:
-    - dev
+    - main
 
 deploy:
   image: ubuntu:22.04
@@ -42,4 +42,4 @@ deploy:
     name: development
     url: https://schema.inowas.com
   only:
-    - dev
+    - main
