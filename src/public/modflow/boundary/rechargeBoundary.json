@@ -40,7 +40,9 @@
               "oneOf": [
                 {
                   "type": "number",
-                  "minimum": 0
+                  "minimum": 0,
+                  "minItems": 1,
+                  "maxItems": 1
                 },
                 {
                   "type": "array",
@@ -52,9 +54,7 @@
                     }
                   }
                 }
-              ],
-              "minItems": 1,
-              "maxItems": 1
+              ]
             }
           }
         },
