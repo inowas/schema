@@ -36,8 +36,23 @@
           "items": {
             "type": "array",
             "items": {
-              "description": "0: recharge rate",
-              "type": "number",
+              "description": "0: recharge rate value or 2D raster array",
+              "oneOf": [
+                {
+                  "type": "number",
+                  "minimum": 0
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "number",
+                      "minimum": 0
+                    }
+                  }
+                }
+              ],
               "minItems": 1,
               "maxItems": 1
             }
